@@ -1,0 +1,131 @@
+/* section-contact */
+.body-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.section-contact{
+    margin-top: 125px;
+    margin-left: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-contact p{
+    font-size: 70px;
+    margin: 0;
+}
+
+.section-contact p span{
+    color: #E73587;
+}
+
+.section-contact h2{
+    font-weight:500;
+    margin: 0;
+}
+
+.form {
+    width: 500px;
+    margin-top: 130px;
+    margin-right: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+}
+  
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+  
+textarea {
+    height: 150px;
+}
+  
+button {
+    background-image: linear-gradient(to right ,#E4358B,#9232E9);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 500px;
+}
+  
+button:hover {
+    background-color: #03A9F4;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #020E35;
+}
+  
+.footer p {
+    font-size: 12px;
+    margin: 0;
+    color: white;
+    margin-left: 100px ;
+}
+
+@media screen and (max-width: 930px) {
+    .body-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        margin-top: 90px;
+        margin-left: 20px;
+    }
+    .form {
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100px;
+        margin-bottom: 150px;
+    }
+    .footer {
+        margin-top: 230px;
+        position:relative;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .body-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer {
+        margin-top: 230px;
+        position:relative;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .body-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form{
+        width: 350px;
+    }
+
+    button {
+        width: 350px;
+    }
+
+    .footer {
+        margin-top: 230px;
+        position:relative;
+    }
+}
