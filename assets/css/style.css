@@ -1,6 +1,360 @@
 @import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
 
-/* section contact&newslatter */
+
+/* ========================================================================================================= */
+/*                                     Style Portofolio / Our Work                                           */
+/* ========================================================================================================= */
+#portofolio{
+    font-family: 'Basic', sans-serif;
+    background: #020E35;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.ourWork{
+    color: #FFF;
+
+}
+
+.ourWork h1{
+    text-align: center;
+    font-family: Basic;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.line div{
+    margin: 0 0.2rem;
+}
+.line {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) translateY(-7px);
+    height: 2px;
+    width: 100px;
+    background: #E73587;
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+
+.ourWork .row{
+    margin: 65px 0;
+}
+
+.ourWork .row .right{
+    text-align: right;
+    
+}
+.ourWork .row .right p{
+    position: relative;
+    left: 3%;
+    
+}
+
+.ourWork .row .left .text-brand{
+    padding-left: 25px;
+}
+
+.ourWork .row .right .text-brand{
+    padding-right: 25px;
+}
+
+.ourWork .row .right .img-brand{
+    padding-left: 0;
+}
+
+.ourWork .text-brand h2{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ourWork .text-brand h6{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.ourWork .text-brand p{
+    margin-top: 50px;
+    width: 492px;
+    position: relative;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ourWork .img-brand img{
+    width: 535px;
+    flex-shrink: 0;
+}
+
+.ourWork .seeAllWork button{
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 2px;
+    
+    background: linear-gradient(to left ,#E73587,#8C32F0, #E73587);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.8s;
+    background-size: 200%;
+}
+
+.ourWork .seeAllWork button:hover{
+    background-position: right;
+    cursor: pointer;
+    color: #fff;
+}
+
+.img-brand-link{
+    cursor: pointer;
+    transition: transform 0.7s, filter 0.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(80%);
+}
+
+.img-brand-link:hover{
+    filter: brightness(105%);
+    transform: scale(1.02);
+}
+
+.text-brand-link{
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.link-1:hover{
+    color: #F09532;
+    filter: brightness(125%);
+}
+.link-2:hover{
+    color: #8C32F0;
+}
+.link-3:hover{
+    color: #E73587;
+}
+.link-4:hover{
+    color: #32D6F0;
+}
+
+
+
+/* ----------------- Media Query ------------------------ */
+
+/* responsive phone Samsung S20 */
+@media (max-width: 468px) {
+    .ourWork .row .right{
+        text-align: left;   
+    }
+    
+    .ourWork .row .right p{
+        position: relative;
+        left: 0%;  
+    }
+
+    .ourWork .row .right .img-brand {
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .ourWork .row .left .text-brand {
+        padding-left: 10px;
+    }
+
+    .ourWork .row{
+        margin: 25px 0;
+    }
+
+    .ourWork .text-brand h2{
+        font-size: 25px;
+        margin-top: 5px;
+    }
+    
+    .ourWork .text-brand h6{
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3px;
+        margin-top: 0px;
+    }
+
+    .ourWork .text-brand p{
+        margin-top: 20px;
+        width: 100%;
+        position: relative;
+    
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .ourWork .img-brand img{
+        width: 100%;
+        flex-shrink: 0;
+    }
+    
+}
+
+/* Mobile phone */
+@media (min-width: 469px) and (max-width: 767px) {
+    .ourWork .row .right{
+        text-align: left;   
+    }
+    
+    .ourWork .row .right p{
+        position: relative;
+        left: 0%;  
+    }
+
+    .ourWork .row .right .img-brand {
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .ourWork .row .left .text-brand {
+        padding-left: 10px;
+    }
+
+    .ourWork .row{
+        margin: 25px 0;
+    }
+
+    .ourWork .text-brand h2{
+        font-size: 25px;
+        margin-top: 5px;
+    }
+    
+    .ourWork .text-brand h6{
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3px;
+        margin-top: 0px;
+    }
+
+    .ourWork .text-brand p{
+        margin-top: 20px;
+        width: 100%;
+        position: relative;
+    
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .ourWork .img-brand img{
+        width: 100%;
+        flex-shrink: 0;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 990px) {
+    .ourWork .row .right p{
+        position: relative;
+        left: 0%;
+    }
+
+    .ourWork .row{
+        margin: 45px 0;
+    }
+    
+    .ourWork .row .left .text-brand{
+        padding-left: 5px;
+    }
+    
+    .ourWork .row .right .text-brand{
+        padding-right: 18px;
+    }
+    
+    /* .ourWork .row .right .img-brand{
+        padding-left: 0;
+    } */
+    .ourWork .text-brand h2{
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .ourWork .text-brand h6{
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3px;
+        margin-top: 15px;
+    }
+    
+    .ourWork .text-brand p{
+        margin-top: 25px;
+        width: 100%;
+        position: relative;
+    
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .ourWork .img-brand img{
+        width: 100%;
+        flex-shrink: 0;
+    }
+}
+
+/* laptop */
+@media (min-width: 991px) and (max-width: 1200px) {
+    
+    .ourWork .row .right p{
+        position: relative;
+        left: 0%;
+    }
+    
+    .ourWork .row .left .text-brand{
+        padding-left: 10px;
+    }
+    
+    .ourWork .row .right .text-brand{
+        padding-right: 22px;
+    }
+
+    .ourWork .img-brand img{
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .ourWork .text-brand p{
+        /* margin-top: 25px; */
+        width: 100%;
+        position: relative;
+    }
+}
+
+
+/*============================= section contact & newslatter ===================================*/
 .contact-content{
     margin-top: 100px;
     margin-bottom: 80px;
@@ -113,7 +467,7 @@
     line-height: 13px; /* 72.222% */
 }
   
-button:hover {
+.form-contact button:hover {
     background-color: #03A9F4;
 }
 
@@ -131,7 +485,7 @@ footer{
     line-height: normal;
 }
 
-
+/*===================== media query ==================*/
 @media (max-width: 668px) {
     .contact-content{
         margin-top: 30px;
