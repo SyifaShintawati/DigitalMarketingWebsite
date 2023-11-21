@@ -11,7 +11,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   let scrollPosition = 0;
   $("#service-slider .carousel-control-next").on("click", function () {
     if (scrollPosition < serviceWidth - cardWidth * 4) {
-      scrollPosition += (cardWidth + 50);
+      scrollPosition += (cardWidth + 30);
       $("#service-slider .carousel-inner").animate(
         { scrollLeft: scrollPosition },
         600
@@ -20,7 +20,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   });
   $("#service-slider .carousel-control-prev").on("click", function () {
     if (scrollPosition > 0) {
-      scrollPosition -= (cardWidth + 50);
+      scrollPosition -= (cardWidth + 30);
       $("#service-slider .carousel-inner").animate(
         { scrollLeft: scrollPosition },
         600
