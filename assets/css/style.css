@@ -1,5 +1,192 @@
 @import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
 
+/* ========================================================================================================= */
+/*                                     Start Style Service & About Us                                        */
+/* ========================================================================================================= */
+.aboutUsTitle{
+    text-align: center;
+    font-family: Basic;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.aboutUsDescription{
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-us-half-circle{
+    position: absolute;
+    left: 0px;
+    border-bottom-right-radius: 200px;
+    border-top-right-radius: 200px;
+    background-color: #f0f3fa;
+    width: 100px;
+    height: 200px;
+}
+
+@media (min-width: 300px) and (max-width: 999px) {
+    .about-us-half-circle{
+        margin-top: 30%;
+        left: 0px;
+        border-bottom-right-radius: 100px;
+        border-top-right-radius: 100px;
+        background-color: #f0f3fa;
+        width: 50px;
+        height: 100px;
+    }
+    .carousel-control-next{
+        opacity: 1 !important;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        background: linear-gradient(270deg, #8c32f0, #e73587);
+        box-sizing: border-box;
+        width: 48px;
+        height: 48px;
+        border: 2px solid white;
+    }
+    .carousel-control-prev{
+        opacity: 1 !important;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        background: linear-gradient(270deg, #8c32f0, #e73587);
+        box-sizing: border-box;
+        width: 48px;
+        height: 48px;
+        border: 2px solid white;
+    }
+}
+
+.services-title-top{
+    margin-top: 30px;
+}
+
+.servicesTitle{
+    text-align: center;
+    font-family: Basic;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (min-width: 1000px) {
+    .carousel-control-next{
+        opacity: 1 !important;
+        border-radius: 50%;
+        top: 50%;
+        transform: translate(120%, -50%);
+        background: linear-gradient(270deg, #8c32f0, #e73587);
+        box-sizing: border-box;
+        width: 48px;
+        height: 48px;
+        border: 2px solid white;
+    }
+    .carousel-control-prev {
+        opacity: 1 !important;
+        border-radius: 50%;
+        top: 50%;
+        transform: translate(-70%, -50%);
+        background: linear-gradient(270deg, #8c32f0, #e73587);
+        box-sizing: border-box;
+        width: 48px;
+        height: 48px;
+        border: 2px solid white;
+    }
+}
+@media (min-width: 768px) {
+    .carousel-item {
+        margin-right: 0;
+        margin-left: 10px;
+        padding: 10px;
+        flex: 0 0 33.333333%;
+        display: block;
+    }
+    .carousel-inner {
+        display: flex;
+    }
+}
+.service-content{
+    border-radius: 0%;
+}
+.services-image{
+    padding: 20px
+}
+.service-content-text{
+    font-family: Basic;
+    font-size: 12px;
+}
+.service-title{
+    font-weight: 550 !important;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+.service-body{
+    margin: 0;
+    font-size: 15px;
+
+}
+#services{
+  background: linear-gradient(
+    to bottom,
+    white 0%,
+    white 50%,
+    #020E35 50%,
+    #020E35 100%
+  );
+}
+
+.btn-read-service{
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 2px;
+    background: linear-gradient(to left ,#E73587,#8C32F0, #E73587);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.8s;
+    background-size: 200%;
+}
+
+.btn-read-service:hover{
+    background-position: right;
+    cursor: pointer;
+    color: #fff;
+}
+.service-content-color1{
+   background-color: #fdf8e3;
+   border: none;
+}
+.service-content-color2{
+   background-color: #f0f3fa;
+   border: none;
+}
+.service-content-color3{
+   background-color: #feeff0;
+   border: none;
+}
+
+.section-btn-read-service{
+    margin-top: 40px;
+}
+
+/* ========================================================================================================= */
+/*                                       End Style Service & About Us                                        */
+/* ========================================================================================================= */
 
 /* ========================================================================================================= */
 /*                                     Style Portofolio / Our Work                                           */
@@ -7,7 +194,7 @@
 #portofolio{
     font-family: 'Basic', sans-serif;
     background: #020E35;
-    padding-top: 100px;
+    padding-top: 30px;
     padding-bottom: 10px;
 }
 
