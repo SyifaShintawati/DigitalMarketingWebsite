@@ -1,45 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Marketing Web | Final Project III</title>
 
     <!-- style -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    
-    <!-- header -->
-    <nav>
 
-    </nav>
+<body>
+
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <img src="assets/icon/icon-brand-1.svg" alt="icon-brand" class="img-brand-1 brand">
+                <img src="assets/icon/icon-brand-2.svg" alt="icon-brand" class="img-brand-2 brand">
+                <img src="assets/icon/icon-brand-3.svg" alt="icon-brand" class="img-brand-3 brand">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" onclick="icon()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="menuHeader">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#banner">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutUs">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">SERVICE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portofolio">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contactUs" type="button" class="btn btn-gradient">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!-- banner -->
-    <section id="home">
-
+    <section id="banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="sec-banner">
+                        <a href="#portofolio" type="button" class="btn btn-gradient btn-banner">SEE OUR WORK</a>
+                    </div>
+                    <h1 class="banner">We Create Content that ranks</h1>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/icon/banner.svg" alt="banner" class="responsive">
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- about Us-->
-    <section id="aboutUs">
-
+    <section id="aboutUs" class="container">
+        <div class="row">
+            <div class="col-1">
+                <div class="about-us-half-circle"></div>
+            </div>
+            <div class="col-10">
+                <div class="container mb-5 mt-4 aboutUs">
+                    <div class="row">
+                        <div class="text-center">
+                            <h1 class="aboutUsTitle">About Us</h1>
+                            <div class="line">
+                                <div></div>
+                            </div>
+                            <p class="aboutUsDescription mt-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                <br>
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                <br>
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- services -->
-    <section id="services">
+    <section id="service" class="services-title-top">
+        <h1 class="servicesTitle">Our Valuable Services</h1>
+        <div class="line">
+            <div></div>
+        </div>
+    </section>
 
+    <section id="services" class="mt-4">
+        <div class="container">
+            <div id="service-slider" class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card service-content service-content-color1">
+                            <div class="text-center">
+                                <img class="services-image" alt="100%x280" src="assets/img/services/Bitmap.png"
+                                    width="300px" height="300px">
+                            </div>
+                            <div class="card-body service-content-text">
+                                <p class="text-center service-title">App Development</p>
+                                <p class="text-center service-body">Lorem ipsum dolor sit amet,</p>
+                                <p class="text-center service-body">consectetur adipiscing elit, sed do</p>
+                                <p class="text-center service-body">eiusmod tempor incididunt ut labore</p>
+                                <p class="text-center service-body mb-4">et dolore magna aliqua.</p>
+                                <div class="text-center section-btn-read-service">
+                                    <button class="text-center mb-3 btn-read-service" type="submit">READ MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card service-content service-content-color2">
+                            <img class="services-image" alt="100%x280" src="assets/img/services/Bitmap3.png"
+                                width="300px" height="300px">
+                            <div class="card-body service-content-text">
+                                <p class="text-center service-title">Web Development</p>
+                                <p class="text-center service-body">Lorem ipsum dolor sit amet,</p>
+                                <p class="text-center service-body">consectetur adipiscing elit, sed do</p>
+                                <p class="text-center service-body">eiusmod tempor incididunt ut labore</p>
+                                <p class="text-center service-body mb-4">et dolore magna aliqua.</p>
+                                <div class="text-center section-btn-read-service">
+                                    <button class="text-center mb-3 btn-read-service" type="submit">READ MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card service-content service-content-color3">
+                            <img class="services-image" alt="100%x280" src="assets/img/services/Bitmap2.png"
+                                width="300px" height="300px">
+                            <div class="card-body service-content-text">
+                                <p class="text-center service-title">UI UX Design</p>
+                                <p class="text-center service-body">Lorem ipsum dolor sit amet,</p>
+                                <p class="text-center service-body">consectetur adipiscing elit, sed do</p>
+                                <p class="text-center service-body">eiusmod tempor incididunt ut labore</p>
+                                <p class="text-center service-body mb-4">et dolore magna aliqua.</p>
+                                <div class="text-center section-btn-read-service">
+                                    <button class="text-center mb-3 btn-read-service" type="submit">READ MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card service-content service-content-color1">
+                            <div class="text-center">
+                                <img class="services-image" alt="100%x280" src="assets/img/services/Bitmap.png"
+                                    width="300px" height="300px">
+                            </div>
+                            <div class="card-body service-content-text">
+                                <p class="text-center service-title">App Development</p>
+                                <p class="text-center service-body">Lorem ipsum dolor sit amet,</p>
+                                <p class="text-center service-body">consectetur adipiscing elit, sed do</p>
+                                <p class="text-center service-body">eiusmod tempor incididunt ut labore</p>
+                                <p class="text-center service-body mb-4">et dolore magna aliqua.</p>
+                                <div class="text-center section-btn-read-service">
+                                    <button class="text-center mb-3 btn-read-service" type="submit">READ MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#service-slider"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#service-slider"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
     </section>
 
     <!-- portofolio / our work -->
     <section id="portofolio">
-
+        <div class="container mb-5 mt-4 ourWork">
+            <div class="row">
+                <div class="text-center">
+                    <h1>Our Work</h1>
+                    <!-- garis tambahan -->
+                    <div class="line">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row left">
+                        <div class="col-sm-12 col-md-6 col-lg-6 img-brand">
+                            <a href="#" target="_blank">
+                                <img class="img-brand-link" src="assets/img/ourWork/Bitmap.png" alt="brand-1">
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 text-brand">
+                            <a class="text-brand-link link-1" href="#" target="_blank">
+                                <h2>Brand Name</h2>
+                                <h6>iOS | ANDROID | WEB DEVELOPMENT</h6>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row right">
+                        <div class="col-sm-12 col-md-6 col-lg-6 order-last order-md-first text-brand">
+                            <a class="text-brand-link link-2" href="#" target="_blank">
+                                <h2>Brand Name</h2>
+                                <h6>iOS | ANDROID | WEB DEVELOPMENT</h6>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 order-first order-md-last img-brand">
+                            <a href="#" target="_blank">
+                                <img class="img-brand-link" src="assets/img/ourWork/Bitmap Copy.png" alt="brand-2">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row left">
+                        <div class="col-sm-12 col-md-6 col-lg-6 img-brand">
+                            <a href="#" target="_blank">
+                                <img class="img-brand-link" src="assets/img/ourWork/Bitmap Copy 2.png" alt="brand-3">
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 text-brand">
+                            <a class="text-brand-link link-3" href="#" target="_blank">
+                                <h2>Brand Name</h2>
+                                <h6>iOS | ANDROID | WEB DEVELOPMENT</h6>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row right">
+                        <div class="col-sm-12 col-md-6 col-lg-6 order-last order-md-first text-brand">
+                            <a class="text-brand-link link-4" href="#" target="_blank">
+                                <h2>Brand Name</h2>
+                                <h6>iOS | ANDROID | WEB DEVELOPMENT</h6>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 order-first order-md-last img-brand">
+                            <a href="#" target="_blank">
+                                <img class="img-brand-link" src="assets/img/ourWork/Bitmap Copy 3.png" alt="brand-4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center seeAllWork">
+                    <a href="#" target="_blank">
+                        <button type="submit">SEE ALL WORK</button>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- contact us -->
+    <!-- contact & newsletter -->
     <section id="contactUs">
-
+        <div class="container contact-content">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 justify-content-start">
+                    <div class="text-contact">
+                        <h2>Questions, Comments, Concerns?</h2>
+                        <p>We'd love to <br><span>hear</span> from you!</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="form-contact">
+                        <form>
+                            <div class="email-contact mb-1">
+                                <label for="email">Your Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="something@website.com">
+                            </div>
+                            <div class="subject-contact mb-1">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder=""
+                                    value="Question about your article">
+                            </div>
+                            <div class="message-contact mb-1">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="10"
+                                    placeholder="Your message starts with..."></textarea>
+                            </div>
+                            <button type="submit" class="">Send a message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- footer -->
+    <footer>
+        &copy; 2023 All rights reserved by GASS Company
+    </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
