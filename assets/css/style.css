@@ -45,7 +45,9 @@
     width: 107px;
     height: 40px;
     padding-right: 20px;
-    background-image: linear-gradient(to right, rgba(231, 53, 135, 1), rgba(140, 50, 240, 1));
+    background: linear-gradient(to left ,#E73587,#8C32F0, #E73587);
+    transition: 0.8s;
+    background-size: 200%;
     border-radius: 2px;
     border: none;
     color: #ffffff;
@@ -56,7 +58,7 @@
 }
 
 .btn-gradient:hover{
-    background-image: linear-gradient(to left, rgba(231, 53, 135, 1), rgba(140, 50, 240, 1));
+    background-position: right;
     cursor: pointer;
     color: #fff;
 }
@@ -771,7 +773,9 @@ h1.banner{
 }
   
 .form-contact button {
-    background-image: linear-gradient(to right ,#E4358B,#9232E9);
+    background: linear-gradient(to left ,#E73587,#8C32F0, #E73587);
+    transition: 0.8s;
+    background-size: 200%;
     color: white;
     padding: 13px;
     border: none;
@@ -786,7 +790,9 @@ h1.banner{
 }
   
 .form-contact button:hover {
-    background-color: #03A9F4;
+    background-position: right;
+    cursor: pointer;
+    color: #fff;
 }
 
 footer{
